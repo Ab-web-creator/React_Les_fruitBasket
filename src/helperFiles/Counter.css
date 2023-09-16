@@ -1,0 +1,95 @@
+.container-for-all {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-for-all>div {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-name {
+  text-align: center;
+  margin-bottom: 60px;
+  font-family: fantasy;
+  color: blueviolet;
+}
+
+.container-that-maps {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.folder-for-fruits {
+  margin: auto;
+  border: 1px solid red;
+  padding: 0px 30px;
+  width: fit-content;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: beige;
+  border-radius: 6px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 0px;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.folder-for-fruits:hover {
+  background-color: rgb(143, 216, 250);
+}
+
+.flex_it {
+  display: flex;
+  margin: 0px 10px;
+}
+
+.flex_it>div {
+  margin: auto;
+}
+
+.fruit-container {
+  margin-right: 60px;
+  display: flex;
+  gap: 0px;
+}
+
+.fruit-image {
+  margin-right: 100px;
+}
+
+.exact-name {
+  width: 190px;
+  font-family: cursive;
+}
+
+
+button {
+  background-color: rgb(0, 255, 98);
+  color: rgb(223, 4, 197);
+  border: none;
+  border-radius: 6px;
+  margin: auto;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+  background-color: rgb(248, 8, 172);
+  color: rgb(251, 255, 0);
+}
+
+.reset-btn {
+  font-size: 18px;
+  letter-spacing: 2px;
+  background-color: rgb(165, 0, 176);
+  color: rgb(247, 255, 210);
+  margin: auto;
+  width: 470px;
+  height: 67px;
+  margin-bottom: 60px;
+}

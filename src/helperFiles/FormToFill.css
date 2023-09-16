@@ -1,0 +1,55 @@
+.form-container {
+  margin: auto;
+  border: 1px solid red;
+  padding: 30px;
+  background-color: beige;
+}
+
+form {
+  width: 400px;
+  /* border: 1px solid red; */
+}
+
+label {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+input {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.radio-btn {
+  margin-top: 20px;
+}
+
+#morgen,
+#evening {
+  margin-top: 20px;
+  width: fit-content;
+  margin-right: 10px;
+}
+
+.radio_words {
+  width: 100px;
+}
+
+.radio-label {
+
+  display: flex;
+  align-items: left;
+
+}
+
+.send-btn {
+
+  font-size: 18px;
+  letter-spacing: 2px;
+  background-color: rgb(165, 0, 176);
+  color: rgb(247, 255, 210);
+  margin: auto;
+  width: 400px;
+  height: 67px;
+  margin-top: 40px;
+}
