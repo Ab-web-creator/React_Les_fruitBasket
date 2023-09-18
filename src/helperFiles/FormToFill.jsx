@@ -19,18 +19,13 @@ const FormToFill = () => {
     }
   )
 
-  // function changeHandler(e) {
-  //   setFormState({
-  //     ...formState,
-  //     [e.target.name]: e.target.value
-  //   })
-  // }
+
 
   function changeHandler(e) {
     if (e.target.type === 'radio' && e.target.name === 'terms') {
       setFormState({
         ...formState,
-        [e.target.name]: e.target.checked // Use e.target.checked for radio buttons
+        [e.target.name]: e.target.checked
       });
     } else {
       setFormState({
@@ -39,8 +34,6 @@ const FormToFill = () => {
       });
     }
   }
-
-
 
 
   function handleSubmit(e) {
@@ -99,7 +92,7 @@ const FormToFill = () => {
                 type='radio'
                 name='timeSlot'
                 id='evening'
-                value='evening' // Use 'NoTest' as the value for the second radio
+                value='evening'
                 checked={formState.timeSlot === 'evening'}
                 onChange={changeHandler}
               />
@@ -114,17 +107,21 @@ const FormToFill = () => {
         <textarea value={formState.comments} onChange={changeHandler} name="comments" id="" cols="30" rows="6"></textarea>
 
 
+
         <label className='radio-btn' htmlFor='terms'>
-          Accept Terms and Conditions
-          <input
-            type='radio'
-            name='terms'
-            id='terms'
-            value={true}
-            checked={formState.terms === true}
-            onChange={changeHandler}
-          />
+          <div className='radio-label'>
+            <input className='termsStuff'
+              type='radio'
+              name='terms'
+              id='terms'
+              value={true}
+              checked={formState.terms === true}
+              onChange={changeHandler}
+            />
+            <p> Accept Terms and Conditions</p>
+          </div>
         </label>
+
 
         <button className='send-btn' type='submit'>Send</button>
       </form>

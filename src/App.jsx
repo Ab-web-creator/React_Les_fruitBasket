@@ -26,10 +26,15 @@ function App() {
   }
 
   function fruitIncrement(fruit) {
+
     setFruits((prevState) => ({
       ...prevState,
       [fruit]: prevState[fruit] + 1
-    }))
+    }),
+
+    )
+    // fruit.style.backgroundColor = 'red';
+    console.log("Incrementing the number!");
   }
 
   function fruitDecrement(fruit) {
@@ -41,10 +46,12 @@ function App() {
     }
   }
 
+
+
   return (
     <>
       <div className='container-for-all'>
-        <h1 className='company-name'>Fruitmand bezorgservice</h1>
+        <h1 className='company-name'>Fruitmand bezorgservice!!</h1>
         <Counter reset={reset} fruitObject={fruits} fruitImageObject={fruitImage} increment={fruitIncrement} decrement={fruitDecrement} />
         <FormToFill />
       </div>
