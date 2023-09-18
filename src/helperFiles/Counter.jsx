@@ -1,14 +1,12 @@
 import React from 'react';
 import './Counter.css'
 
+
 const Counter = ({ fruitObject, increment, decrement, fruitImageObject, reset }) => {
 
   return (
     <div>
       {Object.keys(fruitObject).map((fruit) => {
-
-        // console.log(fruit)
-
         return (
           <div key={fruit} className='container-that-maps'>
             <div className='folder-for-fruits'>
@@ -26,17 +24,21 @@ const Counter = ({ fruitObject, increment, decrement, fruitImageObject, reset })
               </button>
               <div className='flex_it '>
                 <div>
-                  <p>{fruitObject[fruit]}</p>
+                  <p  >{fruitObject[fruit]}</p>
                 </div>
               </div>
-              <button onClick={() => increment(fruit)}>
+              <button onClick={() => {
+                increment(fruit);
+              }}>
                 +
               </button>
             </div>
+
           </div>
         )
       })}
       <button onClick={reset} className='reset-btn'>Reset</button>
+
     </div>
   );
 };

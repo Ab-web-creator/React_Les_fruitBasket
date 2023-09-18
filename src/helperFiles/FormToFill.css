@@ -42,6 +42,12 @@ input {
 
 }
 
+.termsStuff {
+  margin-bottom: 0px;
+  width: fit-content;
+  margin-right: 10px;
+}
+
 .send-btn {
 
   font-size: 18px;
